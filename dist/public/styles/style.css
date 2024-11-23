@@ -23,7 +23,7 @@ body {
 
 #container {
   width: 100svw;
-  height: calc(100svh - 100px);
+  height: calc(100svh - 50px);
   padding-inline: 5%;
   padding-block: 4ch;
   display: flex;
@@ -189,7 +189,7 @@ body {
   color: #dfb86c;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   html {
     font-size: 10px;
   }
@@ -202,6 +202,24 @@ body {
   }
   #frame #output {
     border-right: 1px solid var(--main-color);
+  }
+  #output img {
+    max-width: 150px;
+  }
+}
+@media only screen and (max-width: 800px) and (max-height: 520px) {
+  html {
+    font-size: 10px;
+  }
+  #frame {
+    flex-direction: row;
+  }
+  #frame > section {
+    width: 50%;
+    height: 100%;
+  }
+  #output img {
+    max-width: 150px;
   }
 }
 

@@ -1,6 +1,6 @@
 #container {
   width: 100svw; // main canvas
-  height: calc(100svh - 100px); // exclude title bar from full height
+  height: calc(100svh - 50px); // exclude title bar from full height
   padding-inline: 5%; // padding for inner elements
   padding-block: 4ch;
 
