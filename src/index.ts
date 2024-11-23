@@ -1,7 +1,7 @@
 // load dev secrets
 import dotenv from 'dotenv';
 dotenv.config();
-//
+
 // other libraries
 import path from 'path';
 

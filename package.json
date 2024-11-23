@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
+    "start": "npx tsx src/index.ts",
     "dev": "nodemon --exec npx tsx src/index.ts",
     "w:ts": "tsc --watch",
     "w:scss": "sass --watch src/scss/style.scss:public/styles/style.css"
