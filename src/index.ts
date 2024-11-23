@@ -8,7 +8,12 @@ import path from 'path';
 // initialize express
 import express from 'express';
 const app = express();
-const port = process.env.PORT;
+let port = process.env.PORT;
+
+// if on production
+if (!port) {
+    port = '3000';
+}
 
 // get api router
 import get from './api/get.ts';
