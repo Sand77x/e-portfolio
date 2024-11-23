@@ -16,7 +16,7 @@ if (!port) {
 }
 
 // get api router
-import get from './api/get.ts';
+import get from './api/get.js';
 
 app.use(express.static('public'));
 app.use('/api', get);
