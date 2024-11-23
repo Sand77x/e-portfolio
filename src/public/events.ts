@@ -18,7 +18,8 @@ async function getModuleData(name: string): Promise<Module> {
 
 function scrollAndFocus(): void {
     $('#terminal-user-input').trigger('focus');
-    $('#terminal').scrollTop($('#terminal').height() * 10); // scroll to the bottom
+    const height = <number>$('#terminal').height();
+    $('#terminal').scrollTop(height * 10); // scroll to the bottom
 }
 
 // generate past history
