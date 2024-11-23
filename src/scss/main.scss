@@ -29,6 +29,7 @@
   flex-grow: 1;
   height: 80%;
 
+
   &>section {
     height: 100%;
     overflow-y: auto;
@@ -36,8 +37,6 @@
     width: 50%;
   }
 
-  // TODO: side by side on big screen
-  // top bottom otherwise
   #output {
     border: 1px solid;
     border-right: none;

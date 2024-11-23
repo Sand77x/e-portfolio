@@ -5,6 +5,10 @@
   --debug2: 1px solid green;
 }
 
+html {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -183,6 +187,22 @@ body {
 
 .special-command {
   color: #dfb86c;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+  #frame {
+    flex-direction: column;
+  }
+  #frame > section {
+    width: 100%;
+    height: 50%;
+  }
+  #frame #output {
+    border-right: 1px solid var(--main-color);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

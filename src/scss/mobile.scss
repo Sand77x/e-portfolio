@@ -1,0 +1,19 @@
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+
+  #frame {
+    flex-direction: column;
+
+    // stack sections on top
+    &>section {
+      width: 100%;
+      height: 50%;
+    }
+
+    #output {
+      border-right: 1px solid var(--main-color); // put right border back
+    }
+  }
+}
