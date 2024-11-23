@@ -6,7 +6,7 @@
     "start": "npx tsx src/index.ts",
     "dev": "nodemon --exec npx tsx src/index.ts",
     "w:ts": "tsc --watch",
-    "w:scss": "sass --watch src/scss/style.scss:public/styles/style.css"
+    "w:scss": "sass --watch src/scss/style.scss:dist/public/styles/style.css"
   },
   "type": "module",
   "keywords": [],

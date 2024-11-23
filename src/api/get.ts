@@ -11,7 +11,7 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/get', (req, res) => {
-    const moduleName = req.query.input;
+    const moduleName = <string>req.query.input;
 
     if (data[moduleName]) {
         let response: Module = {

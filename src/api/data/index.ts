@@ -98,6 +98,7 @@ mouse    - replace terminal with buttons (for easy navigation!)</p>`,
         `,
         reply: `<span class="module-label">_MainReflection_</span> module loaded.`,
     },
+
     // JOKE COMMANDS :)
     neuro: {
         html: `
@@ -132,4 +133,3 @@ mouse    - replace terminal with buttons (for easy navigation!)</p>`,
         reply: `<span class="special-command">nice.</span>`,
     },
 };
-//# sourceMappingURL=index.js.map
