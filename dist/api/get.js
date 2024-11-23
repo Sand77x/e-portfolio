@@ -1,16 +1,11 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 // import data
-const index_js_1 = __importDefault(require("./data/index.js"));
-const express_1 = __importDefault(require("express"));
-const router = express_1.default.Router();
+import data from './data/index.js';
+import express from 'express';
+const router = express.Router();
 router.get('/get', (req, res) => {
     const moduleName = req.query.input;
-    if (index_js_1.default[moduleName]) {
-        let response = Object.assign({ error: false }, index_js_1.default[moduleName]);
+    if (data[moduleName]) {
+        let response = Object.assign({ error: false }, data[moduleName]);
         res.status(200).send(response);
         return;
     }
@@ -20,5 +15,5 @@ router.get('/get', (req, res) => {
         error: true,
     });
 });
-exports.default = router;
+export default router;
 //# sourceMappingURL=get.js.map
