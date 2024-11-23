@@ -13,11 +13,11 @@ if (!port) {
 }
 // get api router
 import get from './api/get.js';
-app.use(express.static('public'));
+app.use(express.static('dist/public'));
 app.use('/api', get);
 // serve default route
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve('public/html/main.html'));
+    res.sendFile(path.resolve('dist/public/html/main.html'));
 });
 // listen on port
 app.listen(port, () => {
