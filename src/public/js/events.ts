@@ -36,7 +36,7 @@ async function handleInput(e) {
     e.preventDefault(); // prevent page reload
 
     const userInput = <string>$('#terminal-user-input').val();
-    const data = await getModuleData(userInput);
+    const data = await getModuleData(userInput.toLowerCase());
 
     if (userInput === 'mouse') {
         enterMouseMode();

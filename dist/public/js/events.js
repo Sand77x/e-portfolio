@@ -21,7 +21,8 @@ function getModuleData(name) {
 }
 function scrollAndFocus() {
     $('#terminal-user-input').trigger('focus');
-    $('#terminal').scrollTop($('#terminal').height() * 10); // scroll to the bottom
+    const height = $('#terminal').height();
+    $('#terminal').scrollTop(height * 10); // scroll to the bottom
 }
 // generate past history
 function generateHistory(input, output) {
@@ -36,7 +37,7 @@ function handleInput(e) {
     return __awaiter(this, void 0, void 0, function* () {
         e.preventDefault(); // prevent page reload
         const userInput = $('#terminal-user-input').val();
-        const data = yield getModuleData(userInput);
+        const data = yield getModuleData(userInput.toLowerCase());
         if (userInput === 'mouse') {
             enterMouseMode();
             return;
