@@ -1,0 +1,54 @@
+#container {
+  width: 100svw; // main canvas
+  height: calc(100svh - 100px); // exclude title bar from full height
+  padding-inline: 5%; // padding for inner elements
+  padding-block: 4ch;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title {
+  margin-bottom: 1rem;
+
+  #title-header {
+    margin-bottom: 0.5rem;
+  }
+
+  #title-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// border of the main part 
+#frame {
+  display: flex;
+  flex-grow: 1;
+  height: 80%;
+
+  &>section {
+    height: 100%;
+    overflow-y: auto;
+    padding: 24px;
+    width: 50%;
+  }
+
+  // TODO: side by side on big screen
+  // top bottom otherwise
+  #output {
+    border: 1px solid;
+    border-right: none;
+  }
+
+  #terminal,
+  #mouse-mode {
+    border: 1px solid;
+  }
+
+  #mouse-mode {
+    display: none; // be invisible by default
+  }
+}

@@ -1,0 +1,12 @@
+{
+   "compilerOptions": {
+      "moduleResolution": "node10",
+      "outDir": "public/js",
+      "target": "ES2016",
+      "module": "CommonJS",
+      "sourceMap": true,
+   },
+   "include": [
+      "src/ts/*.ts"
+   ]
+}

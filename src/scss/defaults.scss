@@ -1,0 +1,19 @@
+:root {
+  --main-bg: #080808;
+  --main-color: #f3f3f3;
+  --debug: 1px solid aqua;
+  --debug2: 1px solid green;
+}
+
+* {
+  // resets
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg); // default colors
+  color: var(--main-color);
+  font-family: "Fira Code", monospace; // cool monospace font!
+}

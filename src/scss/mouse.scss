@@ -1,0 +1,22 @@
+#mouse-mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  button {
+    margin: 0;
+    width: 10em;
+    height: 5em;
+    background-color: transparent;
+    color: var(--main-color);
+    outline: none;
+    border: 1px solid var(--main-color);
+
+    &:hover {
+      border: 5px solid var(--main-color);
+      transition: 0.1s border ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+:root {
+  --main-bg: #080808;
+  --main-color: #f3f3f3;
+  --debug: 1px solid aqua;
+  --debug2: 1px solid green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  font-family: "Fira Code", monospace;
+}
+
+#container {
+  width: 100svw;
+  height: calc(100svh - 100px);
+  padding-inline: 5%;
+  padding-block: 4ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title {
+  margin-bottom: 1rem;
+}
+#title #title-header {
+  margin-bottom: 0.5rem;
+}
+#title #title-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#frame {
+  display: flex;
+  flex-grow: 1;
+  height: 80%;
+}
+#frame > section {
+  height: 100%;
+  overflow-y: auto;
+  padding: 24px;
+  width: 50%;
+}
+#frame #output {
+  border: 1px solid;
+  border-right: none;
+}
+#frame #terminal,
+#frame #mouse-mode {
+  border: 1px solid;
+}
+#frame #mouse-mode {
+  display: none;
+}
+
+#output h3 {
+  margin-block: 20px;
+}
+#output h3:first-child {
+  margin-top: 0;
+}
+#output p {
+  margin-bottom: 10px;
+}
+#output img {
+  max-width: 300px;
+}
+#output img.mb {
+  margin-bottom: 24px;
+}
+
+#terminal .terminal-item:last-child() {
+  margin-bottom: 0;
+}
+#terminal * {
+  overflow-anchor: none;
+}
+
+.terminal-item {
+  margin-bottom: 2.5ch;
+}
+.terminal-item .terminal-item-label {
+  margin-bottom: 0.2em;
+}
+.terminal-item p {
+  word-wrap: break-word;
+  text-wrap: wrap;
+}
+
+#terminal-user-input {
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  color: var(--main-color);
+}
+#terminal-user-input:focus {
+  outline: none;
+}
+
+#terminal-anchor {
+  height: 1px;
+  overflow-anchor: auto;
+}
+
+#mouse-mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#mouse-mode button {
+  margin: 0;
+  width: 10em;
+  height: 5em;
+  background-color: transparent;
+  color: var(--main-color);
+  outline: none;
+  border: 1px solid var(--main-color);
+}
+#mouse-mode button:hover {
+  border: 5px solid var(--main-color);
+  transition: 0.1s border ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  background-color: var(--main-color);
+  animation: blink 1s step-end infinite;
+}
+
+.user-label {
+  color: #42ac22;
+}
+
+.module-label {
+  color: #ffff00;
+}
+
+.command-label {
+  color: #00FFFF;
+}
+
+.highlight {
+  color: #FF006F;
+}
+
+.highlight2 {
+  color: #00FF6F;
+}
+
+.tilde {
+  color: #ffff00;
+}
+
+.link {
+  text-decoration: none;
+  color: #00FFFF;
+}
+
+.help-text {
+  white-space: pre;
+  text-wrap: wrap;
+}
+
+.special-command {
+  color: #dfb86c;
+}
+
+/*# sourceMappingURL=style.css.map */

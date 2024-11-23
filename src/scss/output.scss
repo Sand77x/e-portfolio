@@ -1,0 +1,22 @@
+#output {
+
+  h3 {
+    margin-block: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  img.mb {
+    margin-bottom: 24px;
+  }
+}

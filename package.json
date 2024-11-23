@@ -1,0 +1,28 @@
+{
+  "name": "e-portfolio",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --exec npx tsx src/index.ts",
+    "w:ts": "tsc --watch",
+    "w:scss": "sass --watch src/scss/style.scss:public/styles/style.css"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.1",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

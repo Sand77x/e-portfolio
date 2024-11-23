@@ -1,0 +1,39 @@
+#terminal {
+  .terminal-item:last-child() {
+    margin-bottom: 0;
+  }
+
+  * {
+    overflow-anchor: none;
+  }
+}
+
+.terminal-item {
+  margin-bottom: 2.5ch;
+
+  .terminal-item-label {
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    word-wrap: break-word;
+    text-wrap: wrap;
+  }
+}
+
+#terminal-user-input {
+  border: none; // input resets
+  font-family: inherit;
+  background-color: transparent;
+  color: var(--main-color);
+
+  // remove outline when focused
+  &:focus {
+    outline: none;
+  }
+}
+
+#terminal-anchor {
+  height: 1px;
+  overflow-anchor: auto;
+}

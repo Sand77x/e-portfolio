@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>&lt;Access Granted&gt;</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/events.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">
+            <h1 id="title-header">E-PORTFOLIO</h1>
+            <div id="title-bottom">
+                <p id="title-bottom-name">rendell_ngo <span class="cursor">&nbsp;</span></p>
+                <p id="title-bottom-subject">sub_SAS3000</p>
+            </div>
+        </div>
+        <main id="frame">
+            <section id="output"></section>
+            <section id="terminal">
+                <div id="terminal-history"></div>
+                <form id="terminal-input" class="terminal-item">
+                    <p class="terminal-item-label"><span class="user-label">unknown_user</span>@123.456 <span
+                            class="tilde">~</span></p>
+                    <div>$ <input id="terminal-user-input" name="input" autocomplete="off" autofocus /></div>
+                </form>
+                <div id="terminal-anchor"></div>
+            </section>
+            <section id="mouse-mode">
+                <button data-command="intro">Self Introduction</button>
+                <button data-command="resume">Resume</button>
+                <button data-command="lslinks">LSLinks profile</button>
+                <button data-command="contact">Contact Me</button>
+                <button data-command="pck">PCK Reflection</button>
+                <button data-command="work">Academic Work Samples</button>
+                <button data-command="ref">Main Reflection</button>
+                <button data-command="terminal">Terminal Mode</button>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

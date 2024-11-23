@@ -1,0 +1,58 @@
+// blinking cursor
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block; // to set width and height
+  width: 1ch;
+  background-color: var(--main-color);
+
+  animation: blink 1s step-end infinite;
+}
+
+.user-label {
+  color: #42ac22;
+}
+
+.module-label {
+  color: #ffff00;
+}
+
+.command-label {
+  color: #00FFFF;
+}
+
+.highlight {
+  color: #FF006F;
+}
+
+.highlight2 {
+  color: #00FF6F;
+}
+
+.tilde {
+  color: #ffff00;
+}
+
+.link {
+  text-decoration: none;
+  color: #00FFFF;
+}
+
+.help-text {
+  white-space: pre;
+  text-wrap: wrap;
+}
+
+.special-command {
+  color: #dfb86c;
+}
