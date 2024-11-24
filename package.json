@@ -5,10 +5,12 @@
   "scripts": {
     "start": "npx tsx src/index.ts",
     "build": "tsc --build",
+    "preview": "node dist/index.js",
     "dev": "nodemon --exec npx tsx src/index.ts",
     "clean": "tsc --build --clean",
     "w:ts": "tsc --watch",
-    "w:scss": "sass --watch src/scss/style.scss:dist/public/styles/style.css"
+    "w:scss": "sass --watch src/scss/style.scss:dist/public/styles/style.css",
+    "deploy": "vercel --prod"
   },
   "type": "module",
   "keywords": [],
