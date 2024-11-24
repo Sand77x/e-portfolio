@@ -4,7 +4,9 @@
   "main": "index.ts",
   "scripts": {
     "start": "npx tsx src/index.ts",
+    "build": "tsc --build",
     "dev": "nodemon --exec npx tsx src/index.ts",
+    "clean": "tsc --build --clean",
     "w:ts": "tsc --watch",
     "w:scss": "sass --watch src/scss/style.scss:dist/public/styles/style.css"
   },
