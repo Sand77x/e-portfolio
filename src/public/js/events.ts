@@ -1,6 +1,6 @@
 interface Module {
     html: string;
-    error: string | null;
+    error: boolean;
     reply: string;
 }
 
